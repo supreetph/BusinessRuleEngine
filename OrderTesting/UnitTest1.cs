@@ -20,6 +20,7 @@ namespace OrderTesting
 
 
         }
+        [TestMethod]
         public void TestBooksOrders()
         {
             string ordertype = "Books";
@@ -33,6 +34,7 @@ namespace OrderTesting
 
 
         }
+        [TestMethod]
         public void TestLearningOrders()
         {
             string ordertype = "Learning";
