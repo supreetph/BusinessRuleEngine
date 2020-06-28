@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
 
 namespace PromotionEngine.Models
 {
     class Membership : IOrder
     {
-        public void processOrder()
+        public string processOrder()
         {
-            Console.WriteLine("Membership Activated");
+            return "Membership Activated";
+
         }
     }
 }

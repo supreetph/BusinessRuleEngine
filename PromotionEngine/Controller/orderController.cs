@@ -9,10 +9,10 @@ namespace PromotionEngine.Controller
   public class OrderController
     {
         IOrder orderObj;
-         public void  ProcessOrder(string orderType)
+         public string  ProcessOrder(string orderType)
         {
             orderObj = FactoryOrder.GetOrder(orderType);
-            orderObj.processOrder();
+           return  orderObj.processOrder();
             
         }
     }

@@ -6,9 +6,11 @@ namespace PromotionEngine.Models
 {
     class PhysicalOrders : IOrder
     {
-        public void processOrder()
+       
+
+        string IOrder.processOrder()
         {
-            Console.WriteLine("Packing slip Generated");
+            return "Packing slip Generated";
         }
     }
 }

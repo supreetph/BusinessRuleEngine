@@ -2,6 +2,6 @@
 {
     public interface IOrder
     {
-        void processOrder();
+        string processOrder();
     }
 }

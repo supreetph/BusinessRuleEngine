@@ -6,9 +6,11 @@ namespace PromotionEngine.Models
 {
     class Learning : IOrder
     {
-        public void processOrder()
+        
+
+        string IOrder.processOrder()
         {
-            Console.WriteLine("Free FirstAid Video added to Packing slip");
+            return "Free FirstAid Video added to Packing slip";
         }
     }
 }

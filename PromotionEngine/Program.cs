@@ -11,7 +11,8 @@ namespace PromotionEngine
             string ordertype = Console.ReadLine();
          
             OrderController or = new OrderController();
-            or.ProcessOrder(ordertype);
+          var response=  or.ProcessOrder(ordertype);
+            Console.WriteLine(response);
 
         }
     }

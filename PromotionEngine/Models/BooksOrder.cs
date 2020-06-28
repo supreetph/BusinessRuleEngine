@@ -4,12 +4,14 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-   public class BooksOrder : IOrder
+    public class BooksOrder : IOrder
     {
-        public void processOrder()
+        public string processOrder()
         {
-            Console.WriteLine("Duplicate packing slip for royalty department Created");
-
+         return "Duplicate packing slip for royalty department Created";
         }
     }
-}
+
+   
+    }
+

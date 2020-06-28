@@ -6,9 +6,10 @@ namespace PromotionEngine.Models
 {
     public class Payments : IOrder
     {
-        public void processOrder()
+        public string processOrder()
         {
-            Console.WriteLine("Generate a commision Payment to agent");
+           string response ="Generate a commision Payment to agent";
+            return response;
         }
     }
 }
