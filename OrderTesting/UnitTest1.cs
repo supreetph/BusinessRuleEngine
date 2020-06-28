@@ -20,5 +20,31 @@ namespace OrderTesting
 
 
         }
+        public void TestBooksOrders()
+        {
+            string ordertype = "Books";
+
+            OrderController order = new OrderController();
+            var expectedResponse = "Duplicate packing slip for royalty department Created";
+            var actualResponse = order.ProcessOrder(ordertype);
+            Assert.AreEqual(expectedResponse, actualResponse
+                            );
+
+
+
+        }
+        public void TestLearningOrders()
+        {
+            string ordertype = "Learning";
+
+            OrderController order = new OrderController();
+            var expectedResponse = "Free FirstAid Video added to Packing slip";
+            var actualResponse = order.ProcessOrder(ordertype);
+            Assert.AreEqual(expectedResponse, actualResponse
+                            );
+
+
+
+        }
     }
 }
