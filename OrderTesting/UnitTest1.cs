@@ -9,12 +9,13 @@ namespace OrderTesting
         [TestMethod]
         public void TestMemberOrders()
         {
-            string ordertype = "Member";
+            string ordertype = "Membership";
            
             OrderController order = new OrderController();
             var expectedResponse = "Membership Activated";
-            Assert.AreEqual(expectedResponse,
-                            order.ProcessOrder(ordertype));
+            var actualResponse = order.ProcessOrder(ordertype);
+            Assert.AreEqual(expectedResponse, actualResponse
+                            );
 
 
 
