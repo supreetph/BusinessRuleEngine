@@ -4,11 +4,11 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-    class Membership : IOrder
+    class PhysicalOrders : IOrder
     {
         public void processOrder()
         {
-            Console.WriteLine("Membership Activated");
+            Console.WriteLine("Packing slip Generated");
         }
     }
 }

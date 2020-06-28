@@ -4,11 +4,11 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-    class Membership : IOrder
+    class Payments : IOrder
     {
         public void processOrder()
         {
-            Console.WriteLine("Membership Activated");
+            Console.WriteLine("Generate a commision Payment to agent");
         }
     }
 }

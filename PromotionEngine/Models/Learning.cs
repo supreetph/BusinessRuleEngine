@@ -4,11 +4,11 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-    class Membership : IOrder
+    class Learning : IOrder
     {
         public void processOrder()
         {
-            Console.WriteLine("Membership Activated");
+            Console.WriteLine("Free FirstAid Video added to Packing slip");
         }
     }
 }
