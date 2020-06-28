@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-    class Payments : IOrder
+    public class Payments : IOrder
     {
         public void processOrder()
         {

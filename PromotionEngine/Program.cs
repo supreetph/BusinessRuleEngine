@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PromotionEngine.Controller;
+using System;
 
 namespace PromotionEngine
 {
@@ -6,7 +7,12 @@ namespace PromotionEngine
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("enter payment type");
+            string ordertype = Console.ReadLine();
+         
+            OrderController or = new OrderController();
+            or.ProcessOrder(ordertype);
+
         }
     }
 }

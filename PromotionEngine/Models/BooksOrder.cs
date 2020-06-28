@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-    class BooksOrder : IOrder
+   public class BooksOrder : IOrder
     {
         public void processOrder()
         {
