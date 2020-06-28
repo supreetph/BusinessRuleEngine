@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PromotionEngine.Models
 {
-    class FactoryOrder
+   public class FactoryOrder
     {
         static public IOrder GetOrder(string orderType)
         {
@@ -14,6 +14,10 @@ namespace PromotionEngine.Models
             {
                 objIorder = new Membership();
 
+            }
+            else
+            {
+                return null;
             }
             return objIorder;
         }
